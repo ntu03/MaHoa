@@ -1,0 +1,807 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>877</width>
+    <height>589</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:rgb(37, 111, 176);
+color:white;</string>
+  </property>
+  <widget class="QPushButton" name="btnSaveFile">
+   <property name="geometry">
+    <rect>
+     <x>640</x>
+     <y>540</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(242, 219, 116);
+border-radius: 10px;
+border: 2px solid black;
+color:black;</string>
+   </property>
+   <property name="text">
+    <string>Lưu file</string>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../Icon/icons8-save-file-64.png</normaloff>../Icon/icons8-save-file-64.png</iconset>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>340</y>
+     <width>181</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Nội dung sau khi giải mã:</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnOpenFile">
+   <property name="geometry">
+    <rect>
+     <x>640</x>
+     <y>310</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(242, 219, 116);
+border-radius: 10px;
+border: 2px solid black;
+color:black;</string>
+   </property>
+   <property name="text">
+    <string>Mở file</string>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../Icon/icons8-open-file-40.png</normaloff>../Icon/icons8-open-file-40.png</iconset>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>90</y>
+     <width>181</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Nhập nội dung đã mã hoá:</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnGiaiMa">
+   <property name="geometry">
+    <rect>
+     <x>760</x>
+     <y>310</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(242, 219, 116);
+border-radius: 10px;
+border: 2px solid black;
+color:black;</string>
+   </property>
+   <property name="text">
+    <string>Giải mã</string>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../Icon/icons8-encode-32.png</normaloff>../Icon/icons8-encode-32.png</iconset>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>20</y>
+     <width>281</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>20</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Giải Mã Hai Dòng</string>
+   </property>
+   <property name="textFormat">
+    <enum>Qt::PlainText</enum>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="txtVanBanGoc">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>360</y>
+     <width>581</width>
+     <height>171</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: white;
+border: 2px inset #8b6f78;
+border-radius:20px;
+color:black;</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="txtCiphertext">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>120</y>
+     <width>581</width>
+     <height>181</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: white;
+border: 2px inset #8b6f78;
+border-radius:20px;
+color:black;</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnClose">
+   <property name="geometry">
+    <rect>
+     <x>760</x>
+     <y>540</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(242, 219, 116);
+border-radius: 10px;
+border: 2px solid black;
+color:black;</string>
+   </property>
+   <property name="text">
+    <string>Thoát</string>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../Icon/icons8-exit-50.png</normaloff>../Icon/icons8-exit-50.png</iconset>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>10</y>
+     <width>221</width>
+     <height>561</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QFrame {
+  border-width: 1px;
+  border: 1px inset #8b6f78;
+}</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_8">
+    <item>
+     <widget class="QToolBox" name="toolBox">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>200</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+  background-color: #FFC4D0;
+}
+QToolBox {
+ background-color: #FFFFFF;;
+  color: #EEEEEE;
+}</string>
+      </property>
+      <property name="currentIndex">
+       <number>4</number>
+      </property>
+      <widget class="QWidget" name="page">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>196</width>
+         <height>367</height>
+        </rect>
+       </property>
+       <attribute name="label">
+        <string>Mã hóa chuyển vị</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item alignment="Qt::AlignTop">
+         <widget class="QFrame" name="frame_6">
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_5">
+           <property name="leftMargin">
+            <number>11</number>
+           </property>
+           <property name="topMargin">
+            <number>11</number>
+           </property>
+           <property name="rightMargin">
+            <number>11</number>
+           </property>
+           <property name="bottomMargin">
+            <number>11</number>
+           </property>
+           <item>
+            <widget class="QPushButton" name="actionHai_dong_MaHoa">
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(242, 219, 116);
+color:black;</string>
+             </property>
+             <property name="text">
+              <string>Chuyển vị hai dòng</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="actionNhieu_dong_MaHoa">
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(242, 219, 116);
+color:black;</string>
+             </property>
+             <property name="text">
+              <string>Chuyển vị nhiều dòng</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_2">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>196</width>
+         <height>367</height>
+        </rect>
+       </property>
+       <attribute name="label">
+        <string>Mã hóa thay thế</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_4">
+        <item alignment="Qt::AlignTop">
+         <widget class="QFrame" name="frame_10">
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_6">
+           <item>
+            <widget class="QPushButton" name="actionCeasar_MaHoa">
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(242, 219, 116);
+color:black;</string>
+             </property>
+             <property name="text">
+              <string>Ceasar</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="actionVignere_MaHoa">
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(242, 219, 116);
+color:black;</string>
+             </property>
+             <property name="text">
+              <string>Vignere</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="actionBelasco_MaHoa">
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(242, 219, 116);
+color:black;</string>
+             </property>
+             <property name="text">
+              <string>Belasco</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="actionTrithemius_MaHoa">
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(242, 219, 116);
+color:black;</string>
+             </property>
+             <property name="text">
+              <string>Trithemius</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_3">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>196</width>
+         <height>367</height>
+        </rect>
+       </property>
+       <attribute name="label">
+        <string>Mã hóa XOR</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_7">
+        <item alignment="Qt::AlignTop">
+         <widget class="QFrame" name="frame_11">
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_9">
+           <item>
+            <widget class="QPushButton" name="actionXORCeasar_MaHoa">
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(242, 219, 116);
+color:black;</string>
+             </property>
+             <property name="text">
+              <string>Ceasar</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="actionXORVignere_MaHoa">
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(242, 219, 116);
+color:black;</string>
+             </property>
+             <property name="text">
+              <string>Vignere</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="actionXORBelasco_MaHoa">
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(242, 219, 116);
+color:black;</string>
+             </property>
+             <property name="text">
+              <string>Belasco</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="actionXORTrithemius_MaHoa">
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(242, 219, 116);
+color:black;</string>
+             </property>
+             <property name="text">
+              <string>Trithemius</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_4">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>196</width>
+         <height>367</height>
+        </rect>
+       </property>
+       <attribute name="label">
+        <string>Mã hóa hiện đại</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_11">
+        <item alignment="Qt::AlignTop">
+         <widget class="QFrame" name="frame_12">
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_10">
+           <item>
+            <widget class="QPushButton" name="actionDES_MaHoa">
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(242, 219, 116);
+color:black;</string>
+             </property>
+             <property name="text">
+              <string>SDES</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="actionAES_MaHoa">
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(242, 219, 116);
+color:black;</string>
+             </property>
+             <property name="text">
+              <string>AES</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="actionRSA_MaHoa">
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(242, 219, 116);
+color:black;</string>
+             </property>
+             <property name="text">
+              <string>RSA</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_5">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>196</width>
+         <height>367</height>
+        </rect>
+       </property>
+       <attribute name="label">
+        <string>Giải mã chuyển vị</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_18">
+        <item alignment="Qt::AlignTop">
+         <widget class="QFrame" name="frame_13">
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_19">
+           <property name="leftMargin">
+            <number>11</number>
+           </property>
+           <property name="topMargin">
+            <number>11</number>
+           </property>
+           <property name="rightMargin">
+            <number>11</number>
+           </property>
+           <property name="bottomMargin">
+            <number>11</number>
+           </property>
+           <item>
+            <widget class="QPushButton" name="actionHai_dong_GiaiMa">
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(242, 219, 116);
+color:black;</string>
+             </property>
+             <property name="text">
+              <string>Chuyển vị 2 dòng</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="actionNhieu_dong_GiaiMa">
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(242, 219, 116);
+color:black;</string>
+             </property>
+             <property name="text">
+              <string>Chuyển vị nhiều dòng</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_6">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>196</width>
+         <height>367</height>
+        </rect>
+       </property>
+       <attribute name="label">
+        <string>Giải mã thay thế</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_20">
+        <item alignment="Qt::AlignTop">
+         <widget class="QFrame" name="frame_18">
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_21">
+           <property name="leftMargin">
+            <number>11</number>
+           </property>
+           <property name="topMargin">
+            <number>11</number>
+           </property>
+           <property name="rightMargin">
+            <number>11</number>
+           </property>
+           <property name="bottomMargin">
+            <number>11</number>
+           </property>
+           <item>
+            <widget class="QPushButton" name="actionCeasar_GiaiMa">
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(242, 219, 116);
+color:black;</string>
+             </property>
+             <property name="text">
+              <string>Ceasar</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="actionVignere_GiaiMa">
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(242, 219, 116);
+color:black;</string>
+             </property>
+             <property name="text">
+              <string>Vignere</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="actionBelasco_GiaiMa">
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(242, 219, 116);
+color:black;</string>
+             </property>
+             <property name="text">
+              <string>Belasco</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="actionTrithemius_GiaiMa">
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(242, 219, 116);
+color:black;</string>
+             </property>
+             <property name="text">
+              <string>Trithemius</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_7">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>196</width>
+         <height>367</height>
+        </rect>
+       </property>
+       <attribute name="label">
+        <string>Giải mã XOR</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_22">
+        <item alignment="Qt::AlignTop">
+         <widget class="QFrame" name="frame_19">
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_23">
+           <property name="leftMargin">
+            <number>11</number>
+           </property>
+           <property name="topMargin">
+            <number>11</number>
+           </property>
+           <property name="rightMargin">
+            <number>11</number>
+           </property>
+           <property name="bottomMargin">
+            <number>11</number>
+           </property>
+           <item>
+            <widget class="QPushButton" name="actionXORCeasar_GiaiMa">
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(242, 219, 116);
+color:black;</string>
+             </property>
+             <property name="text">
+              <string>Ceasar</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="actionXORVignere_GiaiMa">
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(242, 219, 116);
+color:black;</string>
+             </property>
+             <property name="text">
+              <string>Vignere</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="actionXORBelasco_GiaiMa">
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(242, 219, 116);
+color:black;</string>
+             </property>
+             <property name="text">
+              <string>Belasco</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="actionXORTrithemius_GiaiMa">
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(242, 219, 116);
+color:black;</string>
+             </property>
+             <property name="text">
+              <string>Trithemius</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_8">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>196</width>
+         <height>367</height>
+        </rect>
+       </property>
+       <attribute name="label">
+        <string>Giải mã hiện đại</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_24">
+        <item alignment="Qt::AlignTop">
+         <widget class="QFrame" name="frame_20">
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_25">
+           <item>
+            <widget class="QPushButton" name="actionDES_GiaiMa">
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(242, 219, 116);
+color:black;</string>
+             </property>
+             <property name="text">
+              <string>SDES</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="actionAES_GiaiMa">
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(242, 219, 116);
+color:black;</string>
+             </property>
+             <property name="text">
+              <string>AES</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="actionRSA_GiaiMa">
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(242, 219, 116);
+color:black;</string>
+             </property>
+             <property name="text">
+              <string>RSA</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

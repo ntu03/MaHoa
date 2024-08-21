@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>607</width>
+    <height>475</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>:/newPrefix/2512antoanthongtin_20191224235633.jpg</normaloff>:/newPrefix/2512antoanthongtin_20191224235633.jpg</iconset>
+  </property>
+  <property name="layoutDirection">
+   <enum>Qt::LeftToRight</enum>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-image:url(D:/DETAI_BMHTTT/View/Icon/hinhnen.jpg)</string>
+  </property>
+  <property name="animated">
+   <bool>false</bool>
+  </property>
+  <property name="documentMode">
+   <bool>false</bool>
+  </property>
+  <property name="dockNestingEnabled">
+   <bool>false</bool>
+  </property>
+  <property name="unifiedTitleAndToolBarOnMac">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>110</y>
+      <width>271</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(0, 0, 0, 0);
+color:white;</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Phan Lê Nhật Minh  - 21DH112676&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>50</y>
+      <width>221</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(0, 0, 0, 0);
+color:white;
+</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Lê Quốc Duy - 21DH110276&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="scaledContents">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>80</y>
+      <width>261</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(0, 0, 0, 0);
+color:white;</string>
+    </property>
+    <property name="text">
+     <string>Nguyễn Văn Sơn - 21DH111605</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>140</y>
+      <width>121</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(0, 0, 0, 0);
+color:white;</string>
+    </property>
+    <property name="text">
+     <string>HK1 2023-2024</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>0</y>
+      <width>331</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>18</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Các thuật toán mã hóa dữ liệu</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>607</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuMenu">
+    <property name="title">
+     <string>Menu</string>
+    </property>
+    <widget class="QMenu" name="menuM_ho">
+     <property name="tearOffEnabled">
+      <bool>false</bool>
+     </property>
+     <property name="title">
+      <string>Mã hoá</string>
+     </property>
+     <property name="separatorsCollapsible">
+      <bool>false</bool>
+     </property>
+     <property name="toolTipsVisible">
+      <bool>false</bool>
+     </property>
+     <widget class="QMenu" name="menuK_thu_t_thay_th">
+      <property name="title">
+       <string>Kỹ thuật thay thế</string>
+      </property>
+      <addaction name="actionCeasar_MaHoa"/>
+      <addaction name="actionVignere_MaHoa"/>
+      <addaction name="actionTrithemius_MaHoa"/>
+      <addaction name="actionBelasco_MaHoa"/>
+     </widget>
+     <widget class="QMenu" name="menuK_thu_t_chuy_n_vi">
+      <property name="title">
+       <string>Kỹ thuật chuyển vị</string>
+      </property>
+      <addaction name="actionHai_dong_MaHoa"/>
+      <addaction name="actionNhieu_dong_MaHoa"/>
+     </widget>
+     <widget class="QMenu" name="menuHi_n_i">
+      <property name="title">
+       <string>Hiện đại</string>
+      </property>
+      <addaction name="actionSDES_MaHoa"/>
+      <addaction name="actionRSA_MaHoa"/>
+      <addaction name="actionAES_MaHoa"/>
+     </widget>
+     <widget class="QMenu" name="menuK_thu_t_XOR">
+      <property name="title">
+       <string>Kỹ thuật XOR</string>
+      </property>
+      <addaction name="actionCeasar_XOR_MaHoa"/>
+      <addaction name="actionVignere_XOR_MaHoa"/>
+      <addaction name="actionTrithemius_XOR_MaHoa"/>
+      <addaction name="actionBelasco_XOR_MaHoa"/>
+     </widget>
+     <addaction name="menuK_thu_t_thay_th"/>
+     <addaction name="menuK_thu_t_chuy_n_vi"/>
+     <addaction name="menuK_thu_t_XOR"/>
+     <addaction name="menuHi_n_i"/>
+    </widget>
+    <widget class="QMenu" name="menuGi_i_m">
+     <property name="title">
+      <string>Giải mã</string>
+     </property>
+     <widget class="QMenu" name="menuK_thu_t_thay_th_2">
+      <property name="title">
+       <string>Kỹ thuật thay thế</string>
+      </property>
+      <addaction name="actionCeasar_GiaiMa"/>
+      <addaction name="actionVignere_GiaiMa"/>
+      <addaction name="actionTrithemius_GiaiMa"/>
+      <addaction name="actionBelasco_GiaiMa"/>
+     </widget>
+     <widget class="QMenu" name="menuK_thu_t_chuy_n_v">
+      <property name="title">
+       <string>Kỹ thuật chuyển vị</string>
+      </property>
+      <addaction name="actionHai_dong_GiaiMa"/>
+      <addaction name="actionNhieu_dong_GiaiMa"/>
+     </widget>
+     <widget class="QMenu" name="menuHi_n_i_2">
+      <property name="title">
+       <string>Hiện đại</string>
+      </property>
+      <addaction name="actionSDES_GiaiMa"/>
+      <addaction name="actionRSA_GiaiMa"/>
+      <addaction name="actionAES_GiaiMa"/>
+     </widget>
+     <widget class="QMenu" name="menuK_thu_t_XOR_2">
+      <property name="title">
+       <string>Kỹ thuật XOR</string>
+      </property>
+      <addaction name="actionCeasar_XOR_GiaiMa"/>
+      <addaction name="actionVignere_XOR_GiaiMa"/>
+      <addaction name="actionTrithemius_XOR_GiaiMa"/>
+      <addaction name="actionBelasco_XOR_GiaiMa"/>
+     </widget>
+     <addaction name="menuK_thu_t_thay_th_2"/>
+     <addaction name="menuK_thu_t_chuy_n_v"/>
+     <addaction name="menuK_thu_t_XOR_2"/>
+     <addaction name="menuHi_n_i_2"/>
+    </widget>
+    <addaction name="menuM_ho"/>
+    <addaction name="menuGi_i_m"/>
+    <addaction name="separator"/>
+    <addaction name="actionTho_t"/>
+   </widget>
+   <widget class="QMenu" name="menuSign_in">
+    <property name="title">
+     <string>Sign in</string>
+    </property>
+    <addaction name="actionLogin"/>
+    <addaction name="actionLogout"/>
+    <addaction name="separator"/>
+    <addaction name="actionSignup"/>
+   </widget>
+   <addaction name="menuMenu"/>
+   <addaction name="menuSign_in"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionCeasar_MaHoa">
+   <property name="text">
+    <string>Ceasar</string>
+   </property>
+  </action>
+  <action name="actionVignere_MaHoa">
+   <property name="text">
+    <string>Vignere</string>
+   </property>
+  </action>
+  <action name="actionTrithemius_MaHoa">
+   <property name="text">
+    <string>Trithemius</string>
+   </property>
+  </action>
+  <action name="actionHai_dong_MaHoa">
+   <property name="text">
+    <string>Hai dòng</string>
+   </property>
+  </action>
+  <action name="actionNhieu_dong_MaHoa">
+   <property name="text">
+    <string>Nhiều dòng</string>
+   </property>
+  </action>
+  <action name="actionSDES_MaHoa">
+   <property name="text">
+    <string>SDES</string>
+   </property>
+  </action>
+  <action name="actionRSA_MaHoa">
+   <property name="text">
+    <string>RSA</string>
+   </property>
+  </action>
+  <action name="actionCeasar_GiaiMa">
+   <property name="text">
+    <string>Ceasar</string>
+   </property>
+  </action>
+  <action name="actionVignere_GiaiMa">
+   <property name="text">
+    <string>Vignere</string>
+   </property>
+  </action>
+  <action name="actionTrithemius_GiaiMa">
+   <property name="text">
+    <string>Trithemius</string>
+   </property>
+  </action>
+  <action name="actionHai_dong_GiaiMa">
+   <property name="text">
+    <string>Hai dòng</string>
+   </property>
+  </action>
+  <action name="actionBelasco_GiaiMa">
+   <property name="text">
+    <string>Belasco</string>
+   </property>
+  </action>
+  <action name="actionNhieu_dong_GiaiMa">
+   <property name="text">
+    <string>Nhiều dòng</string>
+   </property>
+  </action>
+  <action name="actionBelasco_MaHoa">
+   <property name="text">
+    <string>Belasco</string>
+   </property>
+  </action>
+  <action name="actionAES_MaHoa">
+   <property name="text">
+    <string>AES</string>
+   </property>
+  </action>
+  <action name="actionSDES_GiaiMa">
+   <property name="text">
+    <string>SDES</string>
+   </property>
+  </action>
+  <action name="actionRSA_GiaiMa">
+   <property name="text">
+    <string>RSA</string>
+   </property>
+  </action>
+  <action name="actionAES_GiaiMa">
+   <property name="text">
+    <string>AES</string>
+   </property>
+  </action>
+  <action name="actionCeasar_XOR_MaHoa">
+   <property name="text">
+    <string>Ceasar</string>
+   </property>
+  </action>
+  <action name="actionVignere_XOR_MaHoa">
+   <property name="text">
+    <string>Vignere</string>
+   </property>
+  </action>
+  <action name="actionTrithemius_XOR_MaHoa">
+   <property name="text">
+    <string>Trithemius</string>
+   </property>
+  </action>
+  <action name="actionBelasco_XOR_MaHoa">
+   <property name="text">
+    <string>Belasco</string>
+   </property>
+  </action>
+  <action name="actionCeasar_XOR_GiaiMa">
+   <property name="text">
+    <string>Ceasar</string>
+   </property>
+  </action>
+  <action name="actionVignere_XOR_GiaiMa">
+   <property name="text">
+    <string>Vignere</string>
+   </property>
+  </action>
+  <action name="actionTrithemius_XOR_GiaiMa">
+   <property name="text">
+    <string>Trithemius</string>
+   </property>
+  </action>
+  <action name="actionBelasco_XOR_GiaiMa">
+   <property name="text">
+    <string>Belasco</string>
+   </property>
+  </action>
+  <action name="actionTho_t">
+   <property name="text">
+    <string>Thoát</string>
+   </property>
+   <property name="toolTip">
+    <string>Thoát</string>
+   </property>
+  </action>
+  <action name="actionLogin">
+   <property name="text">
+    <string>Login</string>
+   </property>
+  </action>
+  <action name="actionLogout">
+   <property name="text">
+    <string>Logout</string>
+   </property>
+  </action>
+  <action name="actionSignup">
+   <property name="text">
+    <string>Signup</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="hinh.qrc"/>
+ </resources>
+ <connections/>
+</ui>
